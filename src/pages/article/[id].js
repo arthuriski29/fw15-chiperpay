@@ -1,9 +1,8 @@
-'use client';
 import React from 'react'
 import {useParams} from 'next/navigation'
 import Header from '@/components/Header'
 
-function ArticleDetail({params}) {
+function ArticleDetail() {
   const {id} = useParams()
   return (
     <>
