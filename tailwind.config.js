@@ -17,4 +17,22 @@ module.exports = {
   plugins: [
     require('daisyui')
   ],
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+          "primary": "#A3624E",
+          "secondary": "#F59376",
+          "third": "#38291B",
+          "accent": "#F0592C",
+          "neutral": "#191D24",
+          "base-100": "#FCE2DA",
+          "info": "#3ABFF8",
+          "success": "#36D399",
+          "warning": "#FBBD23",
+          "error": "#F87272",
+        },
+      },
+    ],
+  }
 }
