@@ -1,12 +1,12 @@
 import React from 'react'
 
-import Image from 'next/image'
 import { HiOutlineBell } from 'react-icons/hi2';
 import { RxDashboard } from 'react-icons/rx';
 import { IoIosLogOut } from 'react-icons/io';
-import { HiOutlineArrowDown, HiOutlineArrowUp, HiOutlineLogout, HiPlus, HiUser } from 'react-icons/hi';
+import { HiOutlineArrowDown, HiOutlineArrowUp, HiPlus, HiUser } from 'react-icons/hi';
 
 
+import Image from 'next/image'
 import profile from '../../assets/image/profile-1.jpg'
 import transaction1 from '../../assets/image/transaction1.png'
 import transaction2 from '../../assets/image/transaction2.png'
