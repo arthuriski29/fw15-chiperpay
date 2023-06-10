@@ -7,13 +7,14 @@ import loginVector from '../../assets/image/login-vector.png'
 import PinInput from '@/components/PinInput';
 
 function createPin() {
-  // const [showAlert, setShowAlert] = React.useState(false)
-  // const [pin, setPin] = React.useState('')
-  // const submitPin = () => {
-  //   console.log(pin)
-  //   //kirim data ke backend
-  // }
-
+  const [showAlert, setShowAlert] = React.useState(false)
+  const changedPin = (value)=> {
+    if(value.length === 6){
+      setShowAlert(true)
+    }else{
+      setShowAlert(false)
+    }
+  }
   return (
     <>
       <section className='flex h-screen'>
@@ -55,11 +56,11 @@ function createPin() {
               Create 6 digits pin to secure all your money and your data in FazzPay app. Keep it secret and don&rsquo;t tell anyone about your FazzPay account password and the PIN.            </div>
             <div className='w-full mt-8'>
               <form className='flex flex-col gap-4'>
-                <PinInput/>
+                <PinInput onChangePin={changedPin}/>
+                {showAlert && <div className='border-b-[2px] border-[#2CAD7D] shadow-lg shadow-[#93C961] max-w-md'></div>}
                 <button type='submit' className='btn bg-[#F0592C] text-white w-full mt-6'>
                   Confirm
                 </button>
-                {/* {showAlert && <div className='alert alert-success max-w-md'>Pin</div>} */}
               </form>
               <div className='text-center mt-8'>Already have an account? Let&rsquo;s <Link href="/auth/login" className='hover:text-primary font-bold text-[#F0592C]'>Login</Link></div>
             </div>

@@ -6,28 +6,55 @@ import React from 'react';
 // import loginVector from '../../assets/image/login-vector.png'
 // import { HiOutlineMail, HiLockClosed, HiUser } from 'react-icons/hi';
 
-function PinInput() {
+function PinInput({onChangePin}) {
+  // const pinInput = React.useRef()
   const pinInput = {
-    input1 : React.useRef(),
+    input1: React.useRef(),
     input2 : React.useRef(),
     input3 : React.useRef(),
     input4 : React.useRef(),
     input5 : React.useRef(),
     input6 : React.useRef()
   }
-  const changeValue = (e)=>{
+  // console.log(pinInput.input1.current.value)
+  // console.log(typeof pinInput.input1.current.value)
+  // console.log(parseInt(pinInput.input1.current.value))
+  // console.log(typeof parseInt(pinInput.input1.current.value))
+  // console.log(pinInput.input2.current.value)
+  // console.log(typeof pinInput.input2.current.value)
+  // console.log(parseInt(pinInput.input2.current.value))
+  // console.log(typeof parseInt(pinInput.input2.current.value))
+  // const changeValue = (e)=>{
+  //   if(e.target.value.length > 0){
+  //     e.target.value = e.target.value.slice(e.target.value.length - 1)
+  //     if(parseInt(e.target.name) < 6){
+  //       pinInput[`input${parseInt(e.target.name) + 1}`].current.focus()
+  //     }
+  //   }
+  // }
+  const changeValue = (e) => {
     if(e.target.value.length > 0){
       e.target.value = e.target.value.slice(e.target.value.length - 1)
       if(parseInt(e.target.name) < 6){
-        pinInput[`input${parseInt(e.target.name) + 1}`].current.focus()
+        pinInput[`input${parseInt(e.target.name)+ 1}`].current.focus()
+      }
+    }else{
+      if(parseInt(e.target.name) > 1){
+        pinInput[`input${parseInt(e.target.name)- 1}`].current.focus()
       }
     }
+
+    const pin =[]
+    for(const key in pinInput){
+      pin.push(pinInput[key].current.value)
+    }
+    onChangePin(pin.join(''))
   }
-  const pin = []
-  for(const key in pinInput){
-    pin.push(pinInput[key].current.values)
-  }
-  console.log(pin)
+  // const pin = []
+  // for(const key in pinInput){
+  //   pin.push(pinInput[key].current.value)
+  // }
+  // console.log(pin)
 
   return (
     
