@@ -3,7 +3,7 @@ import React from 'react'
 import { RxDashboard } from 'react-icons/rx';
 import { IoIosLogOut } from 'react-icons/io';
 import { HiOutlineArrowDown, HiOutlineArrowUp, HiPlus, HiUser } from 'react-icons/hi';
-import { LuSearch } from 'react-icons/lu';
+import { BsPencilSquare } from 'react-icons/bs';
 
 
 import Image from 'next/image'
@@ -60,16 +60,9 @@ function Home() {
         </div>
         <div className='flex flex-col w-[80%] rounded-2xl shadow-2xl mr-20 gap-6 bg-[#f5f5f5]'>
           <div className='flex flex-col flex-1 px-10 py-10 gap-10 h-full text-black'>
-            <div className='flex justify-between items-center'>
-              <div className='font-bold text-[22px]'>Transaction History</div>
-              <button className='btn btn-[#EBECEC]'>-- Select Filter --</button>
-            </div>
-            <div className='flex relative items-center'>
-              <LuSearch className="absolute ml-4 text-[#9CA3AF]" alt="Search Icon" />
-              <input className='input input-bordered border-none flex-1 w-full pl-[50px] bg-[#fff]' type="text" placeholder='Search receiver here' />
-            </div>
-            <div className='flex flex-col gap-6 justify-between'>
-              <Link href='/transfer/input-amount'className='flex flex-shrink justify-between items-center shadow-lg rounded-2xl border-solid py-4 px-4'>
+            <div className='font-bold text-[22px]'>Transfer Money</div>
+            <div className='flex flex-col gap-12 justify-between h-full'>
+              <div className='flex flex-shrink justify-between items-center shadow-lg rounded-2xl border-solid py-4 px-4'>
                 <div className='flex-1 flex gap-10'>
                   <Image
                     src={transaction1}
@@ -82,49 +75,26 @@ function Home() {
                     <div className='text-[#7A7886] font-light'>+62 813-8492-9994</div>
                   </div>
                 </div>
-              </Link>
-              <Link href='/transfer/input-amount'className='flex flex-shrink justify-between items-center shadow-lg rounded-2xl border-solid py-4 px-4'>
-                <div className='flex-1 flex gap-10'>
-                  <Image
-                    src={transaction2}
-                    width='50'
-                    height='50'
-                    alt='transaction2'
-                  />
-                  <div className='flex flex-col flex-1 justify-between'>
-                    <div className='font-bold'>Netflix</div>
-                    <div className='text-[#7A7886] font-light'>+62 812-4343-6731</div>
+              </div>
+              <div className='flex flex-col h-full justify-between'>
+                <div className='w-[336px] text-[#7A7886]'>
+                  Type the amount you want to transfer and then
+                  press continue to the next steps.
+                </div>
+                <div>
+                  <div className='flex flex-col justify-center items-center gap-4  '>
+                    <div className='text-[#B5BDCC] text-[42px] font-bold'>0.00</div>
+                    <div className='text-[18px] leading-8 font-bold'>Rp. 120.000 Available</div>
+                    <div className='flex relative items-center'>
+                      <BsPencilSquare className="absolute ml-4 text-[#9CA3AF]" alt="Notes Icon" />
+                      <input className='input input-bordered border-none flex-1 w-full pl-[50px] bg-[#fff]' type="text" placeholder='Add some notes' />
+                    </div>
                   </div>
                 </div>
-              </Link>
-              <Link href='/transfer/input-amount'className='flex flex-shrink justify-between items-center shadow-lg rounded-2xl border-solid py-4 px-4'>
-                <div className='flex-1 flex gap-10'>
-                  <Image
-                    src={transaction3}
-                    width='50'
-                    height='50'
-                    alt='transaction3'
-                  />
-                  <div className='flex flex-col flex-1 justify-between'>
-                    <div className='font-bold'>Christine Mar...</div>
-                    <div className='text-[#7A7886] font-light'>+62 811-3452-5252</div>
-                  </div>
-                </div>
-              </Link>
-              <Link href='/transfer/input-amount'className='flex flex-shrink justify-between items-center shadow-lg rounded-2xl border-solid py-4 px-4'>
-                <div className='flex-1 flex gap-10'>
-                  <Image
-                    src={transaction4}
-                    width='50'
-                    height='50'
-                    alt='transaction4'
-                  />
-                  <div className='flex flex-col flex-1 justify-between'>
-                    <div className='font-bold'>Robert Chandler</div>
-                    <div className='text-[#7A7886] font-light'>+62 810-4224-4613</div>
-                  </div>
-                </div>
-              </Link>
+                <Link href='/transfer/confirmation' className='self-end'>
+                  <button className='btn btn-secondary' type='submit'>Continue</button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>

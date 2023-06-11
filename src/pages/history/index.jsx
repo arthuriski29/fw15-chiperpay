@@ -64,7 +64,7 @@ function Home() {
               </Link>
             </div>
             <div className='flex flex-col gap-6 justify-between'>
-              <div className='flex flex-shrink justify-between items-center'>
+              <Link href='/transfer/input-amount' className='flex flex-shrink justify-between items-center'>
                 <div className='flex-1 flex gap-10'>
                   <Image
                     src={transaction1}
@@ -78,8 +78,8 @@ function Home() {
                   </div>
                 </div>
                 <div className='flex-1 font-black text-[15px] text-[#1EC05F] text-end'>+Rp 50.000</div>
-              </div>
-              <div className='flex flex-shrink justify-between items-center'>
+              </Link>
+              <Link href='/transfer/input-amount' className='flex flex-shrink justify-between items-center'>
                 <div className='flex-1 flex gap-10'>
                   <Image
                     src={transaction2}
@@ -93,8 +93,8 @@ function Home() {
                   </div>
                 </div>
                 <div className='flex-1 font-black text-[15px] text-[#F0592C] text-end'>-Rp 149.000</div>
-              </div>
-              <div className='flex flex-shrink justify-between items-center'>
+              </Link>
+              <Link href='/transfer/input-amount' className='flex flex-shrink justify-between items-center'>
                 <div className='flex-1 flex gap-10'>
                   <Image
                     src={transaction3}
@@ -108,8 +108,8 @@ function Home() {
                   </div>
                 </div>
                 <div className='flex-1 font-black text-[15px] text-[#1EC05F] text-end'>+Rp 150.000</div>
-              </div>
-              <div className='flex flex-shrink justify-between items-center'>
+              </Link>
+              <Link href='/transfer/input-amount' className='flex flex-shrink justify-between items-center'>
                 <div className='flex-1 flex gap-10'>
                   <Image
                     src={transaction4}
@@ -123,7 +123,7 @@ function Home() {
                   </div>
                 </div>
                 <div className='flex-1 font-black text-[15px] text-[#F0592C] text-end'>-Rp249.000</div>
-              </div>
+              </Link>
             </div>
           </div>
         </div>

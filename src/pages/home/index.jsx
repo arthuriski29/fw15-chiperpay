@@ -36,12 +36,14 @@ function Home() {
               </div>
               <div>Transfer</div>
             </Link>
-            <div className='flex gap-6'>
-              <div className='text-[25px]'>
-                <HiPlus/>
+            <label htmlFor="modal-topup">
+              <div className='flex gap-6 cursor-pointer'>
+                <div className='text-[25px]'>
+                  <HiPlus/>
+                </div>
+                <div>Top Up</div>
               </div>
-              <div>Top Up</div>
-            </div>
+            </label>
             <div className='flex gap-6'>
               <div className='text-[25px]'>
                 <HiUser/>
@@ -172,6 +174,24 @@ function Home() {
         </div>
 
       </div>
+      <input type="checkbox" id="modal-topup" className="modal-toggle" />
+        <div className="modal">
+          <div className="modal-box bg-[#f5f5f5] text-black">
+            <form className='w-full h-[500px] '>
+              <div className='flex flex-col justify-between h-full px-4 py-4'>
+                <div className='text-[18px] font-bold leading-[25px]'>Top Up</div>
+                <div className='w-[302px] text-[#3A3D4299] text-[16px]'>Enter the amount of money, and click submit</div>
+                <div className=''>
+                  <input type='number' className='w-full input input-bordered text-center'/>
+                </div>
+                <button type='submit' className='btn bg-secondary self-end mt-6'>
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+          <label className="modal-backdrop" htmlFor="modal-topup">Close</label>
+        </div>
     </div>
   )
 }
