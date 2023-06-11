@@ -6,7 +6,7 @@ import loginImage from '../../assets/image/login-image.png'
 import loginVector from '../../assets/image/login-vector.png'
 import PinInput from '@/components/PinInput';
 
-function createPin() {
+function CreatePin() {
   const [showAlert, setShowAlert] = React.useState(false)
   const changedPin = (value)=> {
     if(value.length === 6){
@@ -53,7 +53,7 @@ function createPin() {
               That You Created Yourself.
             </div>
             <div>
-              Create 6 digits pin to secure all your money and your data in FazzPay app. Keep it secret and don&rsquo;t tell anyone about your FazzPay account password and the PIN.            </div>
+              Create 6 digits pin to secure all your money and your data in chiperPay app. Keep it secret and don&rsquo;t tell anyone about your chiperPay account password and the PIN.            </div>
             <div className='w-full mt-8'>
               <form className='flex flex-col gap-4'>
                 <PinInput onChangePin={changedPin}/>
@@ -73,4 +73,4 @@ function createPin() {
   )
 }
 
-export default createPin
+export default CreatePin

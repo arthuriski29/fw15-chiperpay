@@ -68,9 +68,11 @@ function Register() {
                     <input className='input input-bordered border-primary flex-1 w-full pl-[50px] bg-[#FBE0D8]' type='password' name='password' placeholder='Create your password'/>
                   </div>
                 </div>
-                <button type='submit' className='btn bg-[#F0592C] text-white w-full mt-6'>
-                  Sign Up
-                </button>
+                <Link href='/'>
+                  <button type='submit' className='btn bg-[#F0592C] text-white w-full mt-6'>
+                    Sign Up
+                  </button>
+                </Link>
               </form>
               <div className='text-center mt-8'>Already have an account? Let&rsquo;s <Link href="/auth/login" className='hover:text-primary font-bold text-[#F0592C]'>Login</Link></div>
             </div>

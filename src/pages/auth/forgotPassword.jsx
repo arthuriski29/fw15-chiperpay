@@ -40,7 +40,7 @@ function ForgotPassword() {
           <div className='h-[80%] max-[1022px]:w-[276px] min-[1023px]:w-[60%] max-[768px]:w-[80%] flex flex-col justify-center items-start gap-8 text-black'>
             <div className='font-bold text-[24px] text-left'>
               Did You Forgot Your Password?
-              Don’t Worry, You Can Reset Your
+              Don&rsquo;t Worry, You Can Reset Your
               Password In a Minutes.
             </div>
             <div>
