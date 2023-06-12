@@ -15,7 +15,7 @@ import transaction4 from '../../assets/image/transaction4.png'
 import Link from 'next/link';
 
 
-function Home() {
+function History() {
   return (
     <div className='h-screen bg-[#ffff]'>
       <Header/>
@@ -141,4 +141,4 @@ function Home() {
   )
 }
 
-export default Home
+export default History

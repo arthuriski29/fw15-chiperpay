@@ -29,8 +29,8 @@ function LandingPage() {
         <div className='relative flex justify-between items-center h-[10vh] mx-[7%]'>
           <Link href='/' className='font-extrabold text-[45px] text-base-100 text-xl'>chiper<span className='text-[#804242] font-black'>Pay</span></Link>
           <div className='flex gap-4'>
-            <button className='btn btn-secondary'>Login</button>
-            <button className='btn btn-secondary'>Sign Up</button>
+            <Link href='/auth/login'><button className='btn btn-secondary'>Login</button></Link>
+            <Link href='/auth/register'><button className='btn btn-secondary'>Sign Up</button></Link>
           </div>
         </div>
         <div className='flex mx-[10%] h-[80%] items-center'>
@@ -44,9 +44,11 @@ function LandingPage() {
               oftenly wasting much of your times.
             </div>
             <div>
-              <button className='btn btn-secondary'>
-                Try It Free
-              </button>
+              <Link href='/home'>
+                <button className='btn btn-secondary'>
+                  Try It Free
+                </button>
+              </Link>
             </div>
           </div>
           <div className='flex-1'>

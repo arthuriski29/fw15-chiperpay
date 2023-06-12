@@ -60,10 +60,12 @@ function Login() {
                     <input className='input input-bordered border-primary flex-1 w-full pl-[50px] bg-[#FBE0D8]' type='password' name='password' placeholder='Password'/>
                   </div>
                 </div>
-                <Link href="/auth/forgotPassword" className='text-end font-bold hover:text-primary'>Forgot Password?</Link>
-                <button type='submit' className='btn bg-[#F0592C] text-white w-full mt-6'>
-                  Login
-                </button>
+                <Link href="/auth/forgot-password" className='text-end font-bold hover:text-primary'>Forgot Password?</Link>
+                <Link href='/home'>
+                  <button type='submit' className='btn bg-[#F0592C] text-white w-full mt-6'>
+                    Login
+                  </button>
+                </Link>
               </form>
               <div className='text-center mt-8'>Don&rsquo;t have an account? Let&rsquo;s <Link href="/auth/register" className='hover:text-primary font-bold text-[#F0592C]'>Sign Up</Link></div>
             </div>

@@ -3,6 +3,7 @@ import React from 'react'
 import { HiOutlineMail } from 'react-icons/hi'
 import loginImage from '../../assets/image/login-image.png'
 import loginVector from '../../assets/image/login-vector.png'
+import Link from 'next/link'
 
 function ForgotPassword() {
   return (
@@ -54,9 +55,11 @@ function ForgotPassword() {
                     <input className='input input-bordered border-primary flex-1 w-full pl-[50px] bg-[#FBE0D8]' type='email' name='email' placeholder='Enter your e-mail'/>
                   </div>
                 </div>
-                <button type='submit' className='btn bg-[#F0592C] text-white w-full mt-6'>
-                  Confirm
-                </button>
+                <Link href='/auth/create-new-password'>
+                  <button type='submit' className='btn bg-[#F0592C] text-white w-full mt-6'>
+                    Confirm
+                  </button>
+                </Link>
               </form>
             </div>
           </div>

@@ -67,14 +67,14 @@ function Home() {
               <div>+62 813-9387-7946</div>
             </div>
             <div className='flex flex-col gap-4 justify-between'>
-              <div className='btn btn-neutral h-[60px] flex gap-4 shadow-lg text-[15px]'>
+              <Link href='/transfer' className='btn btn-neutral h-[60px] flex gap-4 shadow-lg text-[15px]'>
                 <HiOutlineArrowUp/>  
                 <div className=''>Transfer</div>  
-              </div>
-              <div className='btn btn-neutral h-[60px] flex gap-4 shadow-lg text-[15px]'>
+              </Link>
+              <label htmlFor="modal-topup" className='btn btn-neutral h-[60px] flex gap-4 shadow-lg text-[15px]'>
                 <HiPlus/>  
                 <div className=''>Top Up</div>  
-              </div>
+              </label>
             </div>
           </div>
           <div className='flex gap-6 h-[70%] justify-between'>

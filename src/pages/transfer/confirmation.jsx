@@ -17,7 +17,7 @@ import Link from 'next/link';
 import PinInput from '@/components/PinInput';
 
 
-function Home() {
+function Confirmation() {
   const [showAlert, setShowAlert] = React.useState(false)
   const changedPin = (value)=> {
     if(value.length === 6){
@@ -164,4 +164,4 @@ function Home() {
   )
 }
 
-export default Home
+export default Confirmation

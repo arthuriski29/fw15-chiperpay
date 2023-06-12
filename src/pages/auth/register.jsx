@@ -7,6 +7,27 @@ import loginVector from '../../assets/image/login-vector.png'
 import { HiOutlineMail, HiLockClosed, HiUser } from 'react-icons/hi';
 
 function Register() {
+  // const [errorMessage, setErrorMessage] = React.useState('')
+  // const [loading, setLoading] = React.useState(false)
+  
+  // const processLogin = async(e) => {
+  //   e.preventDefault()
+  //   setErrorMessage('')
+  //   try {
+  //     const {value: username} = e.target.username
+  //     const {value: email} = e.target.email
+  //     const {value: password} = e.target.password
+
+  //     const form = new URLSearchParams({username, email, password}).toString()
+  //     const {data} = await http().post('auth/register', form)
+  //   } catch (err) {
+  //     const message = err?.response?.data?.message
+  //     if(message?.includes('duplicate')){
+  //       setErrorMessage('Email Exists')
+  //     }
+  //   }
+  // }
+
   return (
     
     <>
@@ -68,7 +89,7 @@ function Register() {
                     <input className='input input-bordered border-primary flex-1 w-full pl-[50px] bg-[#FBE0D8]' type='password' name='password' placeholder='Create your password'/>
                   </div>
                 </div>
-                <Link href='/'>
+                <Link href='/auth/login'>
                   <button type='submit' className='btn bg-[#F0592C] text-white w-full mt-6'>
                     Sign Up
                   </button>

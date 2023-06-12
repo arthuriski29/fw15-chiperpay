@@ -60,22 +60,22 @@ function PinInput({onChangePin}) {
     
     <div className='flex gap-3 w-full justify-between'>
       <div>
-        <input onChange={changeValue} name='1' ref={pinInput.input1} className='input input-bordered max-w-[30px] px-1 text-center' type='number' />
+        <input onChange={changeValue} name='1' ref={pinInput.input1} className='input input-bordered max-w-[40px] px-1 text-center' type='number' />
       </div>      
       <div>
-        <input onChange={changeValue} name='2' ref={pinInput.input2} className='input input-bordered max-w-[30px] px-1 text-center' type='number' />
+        <input onChange={changeValue} name='2' ref={pinInput.input2} className='input input-bordered max-w-[40px] px-1 text-center' type='number' />
       </div>      
       <div>
-        <input onChange={changeValue} name='3' ref={pinInput.input3} className='input input-bordered max-w-[30px] px-1 text-center' type='number' />
+        <input onChange={changeValue} name='3' ref={pinInput.input3} className='input input-bordered max-w-[40px] px-1 text-center' type='number' />
       </div>      
       <div>
-        <input onChange={changeValue} name='4' ref={pinInput.input4} className='input input-bordered max-w-[30px] px-1 text-center' type='number' />
+        <input onChange={changeValue} name='4' ref={pinInput.input4} className='input input-bordered max-w-[40px] px-1 text-center' type='number' />
       </div>      
       <div>
-        <input onChange={changeValue} name='5' ref={pinInput.input5} className='input input-bordered max-w-[30px] px-1 text-center' type='number' />
+        <input onChange={changeValue} name='5' ref={pinInput.input5} className='input input-bordered max-w-[40px] px-1 text-center' type='number' />
       </div>      
       <div>
-        <input onChange={changeValue} name='6' ref={pinInput.input6} className='input input-bordered max-w-[30px] px-1 text-center' type='number' />
+        <input onChange={changeValue} name='6' ref={pinInput.input6} className='input input-bordered max-w-[40px] px-1 text-center' type='number' />
       </div>      
     </div>
   )
