@@ -44,12 +44,12 @@ function Home() {
                 <div>Top Up</div>
               </div>
             </label>
-            <div className='flex gap-6'>
+            <Link href='/profile' className='flex gap-6'>
               <div className='text-[25px]'>
                 <HiUser/>
               </div>
               <div>Profile</div>
-            </div>
+            </Link>
             
           </div>
           <div className='flex gap-6'>
